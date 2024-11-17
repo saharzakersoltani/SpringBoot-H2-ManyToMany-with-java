@@ -4,6 +4,14 @@ A simple Spring Boot application demonstrating a **many-to-many relationship** b
 
 ---
 
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Prerequisites](#prerequisites)
+- [Project Structure](#project-structure)
+
+----------
+
 ## Features
 
 - Demonstrates a **many-to-many relationship** using a join table (`student_course`).
