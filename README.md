@@ -33,31 +33,38 @@ A simple Spring Boot application demonstrating a **many-to-many relationship** b
 
 ---
 
-### Steps to Run
+## Steps to Run
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/SpringBoot-H2-ManyToMany-Demo.git
 
 2. Navigate to the project directory:
-cd SpringBoot-H2-ManyToMany-Demo
+   ```bash
+   cd SpringBoot-H2-ManyToMany-Demo
 
-3.Build the project:
-mvn clean install
+3. Build the project:
+   ```bash
+   mvn clean install
 
-4.Run the application:
-mvn spring-boot:run
+4. Run the application:
+   ```bash
+   mvn spring-boot:run
 
-5.Access the H2 database web console:
+5. Access the H2 database web console:
 
-URL: http://localhost:8080/h2-console
-JDBC URL: jdbc:h2:mem:testdb
-Username: sa
-Password: (leave blank)
+  * URL: http://localhost:8080/h2-console
 
+  * JDBC URL: jdbc:h2:mem:testdb
 
-Project Structure
+  * Username: sa
+
+  * Password: (leave blank)
+
+-----
+## Project Structure
 The following is the structure of the project:
+```bash
 SpringBoot-H2-ManyToMany-Demo/
 ├── pom.xml                  # Maven configuration
 ├── README.md                # Project description
@@ -81,33 +88,27 @@ SpringBoot-H2-ManyToMany-Demo/
 │   └── test/
 │       └── java/                          # Test source files
 ├── target/                  # Compiled files (after build)
-
-
-
-Database Tables
-student: Stores student information (id, name, email).
-course: Stores course information (id, title, description).
-student_course: Join table for managing the many-to-many relationship between students and courses.
-
-
-
-Example Data
+```
+----
+## Database Tables
+- student: Stores student information (id, name, email).
+- course: Stores course information (id, title, description).
+- student_course: Join table for managing the many-to-many relationship between students and courses.
+----
+## Example Data
 Upon running the application, sample data will be loaded into the database:
-
-Students:
-John Doe
-Jane Smith
-Courses:
-Math
-Science
-Relationships:
-John Doe is enrolled in Math and Science.
-Jane Smith is enrolled in Science.
-
-
-
-Future Improvements
-Add RESTful APIs to manage Student and Course entities.
-Add unit and integration tests.
-Extend the project to use a production-grade database like MySQL or PostgreSQL.
-Add validation and error handling for data input.
+- Students:
+  * John Doe
+  * Jane Smith
+- Courses:
+  * Math
+  * Science
+- Relationships:
+  * John Doe is enrolled in Math and Science.
+  * Jane Smith is enrolled in Science.
+-----
+## Future Improvements
+- Add RESTful APIs to manage Student and Course entities.
+- Add unit and integration tests.
+- Extend the project to use a production-grade database like MySQL or PostgreSQL.
+- Add validation and error handling for data input.
